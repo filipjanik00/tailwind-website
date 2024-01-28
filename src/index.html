@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Contaier -->
+      <div class="flex items-center">
+        <!-- Navbar Logo -->
+        <h2
+          class="cursor-pointer flex-1 tracking-tighter text-2xl text-slate-900 font-bold md:text-4xl"
+        >
+          The Website
+        </h2>
+
+        <!-- Navbar Menu -->
+        <div
+          class="hidden text-lg items-center space-x-8 md:flex md:flex-1 md:justify-center"
+        >
+          <a
+            href="#"
+            class="border-b-2 border-transparent transition-all hover:border-sky-400"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="border-b-2 border-transparent transition-all hover:border-sky-400"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="border-b-2 border-transparent transition-all hover:border-sky-400"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Login and Sign-Up -->
+        <div
+          class="hidden text-lg items-center space-x-4 md:flex md:flex-1 md:justify-end"
+        >
+          <a
+            href="#"
+            class="transition-all bg-sky-400 hover:bg-sky-300 text-white font-bold py-2 px-4 border-b-4 border-sky-700 hover:border-sky-400 rounded shadow-lg"
+            >Log In</a
+          >
+          <a
+            href="#"
+            class="transition-all bg-sky-400 hover:bg-sky-300 text-white font-bold py-2 px-4 border-b-4 border-sky-700 hover:border-sky-400 rounded shadow-lg"
+            >Sign Up</a
+          >
+        </div>
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col hidden items-center self-end py-8 mt-10 space-y-6 font-bold bg-sky-50 sm:w-auto sm:self-center left-6 right-6 shadow-2xl"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Features</a>
+          <a href="#">Contact</a>
+          <a
+            href="#"
+            class="transition-all bg-sky-400 hover:bg-sky-300 text-white font-bold py-2 px-4 border-b-4 border-sky-700 hover:border-sky-400 rounded shadow-lg"
+            >Log In</a
+          >
+          <a
+            href="#"
+            class="transition-all bg-sky-400 hover:bg-sky-300 text-white font-bold py-2 px-4 border-b-4 border-sky-700 hover:border-sky-400 rounded shadow-lg"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Flex container -->
+      <div class="container flex mx-auto mt-10 p-6 md:mt-28">
+        <!-- Hero Content -->
+        <div class="text-center mx-auto tracking-wider">
+          <h1
+            class="text-3xl font-medium tracking-tighter leading-7 mx-auto md:text-5xl md:max-w-xl"
+          >
+            Accounting made simple for small businesses
+          </h1>
+          <p
+            class="leading-5 tracking-tight my-4 mx-auto md:text-lg md:max-w-lg md:my-6"
+          >
+            Most bookeping software is accurate but hard to use, we make the
+            opposite tradeoff and hope you dont ged audited.
+          </p>
+          <a
+            href="#"
+            class="transition-all bg-sky-400 hover:bg-sky-300 text-white font-bold py-2 px-4 border-b-4 border-sky-700 hover:border-sky-400 shadow-lg"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <!-- Flex Container -->
+      <div class="container flex flex-col mx-auto mt-10 p-6 md:mt-28">
+        <!-- Pricing Title And Description -->
+        <div class="flex text-center flex-col space-y-2 md:text-left">
+          <h3 class="text-2xl tracking-tight leading-5 font-medium md:text-3xl">
+            Simple, transparent pricing
+          </h3>
+          <p
+            class="leading-5 tracking-tight my-6 md:text-lg md:max-w-sm md:font-light"
+          >
+            It doesn't matter what size your business is, our softwaer won't
+            work well for you.
+          </p>
+        </div>
+        <!-- Pricing Container -->
+        <div class="flex flex-col md:flex-row mt-10 gap-4">
+          <!-- Pricing 1 -->
+          <div
+            class="flex flex-col bg-sky-500 font-medium text-gray-100 w-full py-8 px-6 space-y-4 rounded-xl shadow-2xl md:flex-1"
+          >
+            <h3 class="text-2xl">9$</h3>
+            <div>
+              <h4 class="font-bold">Starter</h4>
+              <p class="font-light">Good for anyone who is self-employed.</p>
+            </div>
+            <a
+              href="#"
+              class="transition-all w-full bg-sky-700 text-center py-2 rounded-lg font-bold hover:bg-sky-600 shadow-lg"
+              >Get Started</a
+            >
+            <ul class="list-disc pl-6 space-y-2">
+              <li class="text-sm font-light md:text-base">
+                Send 10 quotes and invoices
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Connect up to 2 bank accounts
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Track up to 15 expenses per month
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Manual payroll support
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Export up to 3 reports
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pricing 2 -->
+          <div
+            class="flex flex-col bg-sky-500 font-medium text-gray-100 w-full py-8 px-6 space-y-4 rounded-xl shadow-2xl md:flex-1"
+          >
+            <h3 class="text-2xl">15$</h3>
+            <div>
+              <h4 class="font-bold">Business</h4>
+              <p class="font-light">
+                Perfect for small / medium sized businesses
+              </p>
+            </div>
+            <a
+              href="#"
+              class="transition-all w-full bg-sky-700 text-center py-2 rounded-lg font-bold hover:bg-sky-600 shadow-lg"
+              >Get Started</a
+            >
+            <ul class="list-disc pl-6 space-y-2">
+              <li class="text-sm font-light md:text-base">
+                Send 25 quotes and invoices
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Connect up to 5 bank accounts
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Track up to 50 expenses per month
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Automated payroll support
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Export up to 12 reports
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Bulk reconcile transactions
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Track in multiple currencies
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pricing 3 -->
+          <div
+            class="flex flex-col bg-sky-500 font-medium text-gray-100 w-full py-8 px-6 space-y-4 rounded-xl shadow-2xl md:flex-1"
+          >
+            <h3 class="text-2xl">39$</h3>
+            <div>
+              <h4 class="font-bold">Enterprise</h4>
+              <p class="font-light">
+                For even the biggest enterprise companies.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="transition-all w-full bg-sky-700 text-center py-2 rounded-lg font-bold hover:bg-sky-600 shadow-lg"
+              >Get Started</a
+            >
+            <ul class="list-disc pl-6 space-y-2">
+              <li class="text-sm font-light md:text-base">
+                Send unlimited quotes and invoices
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Connect up to 15 bank accounts
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Track up to 200 expenses per month
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Automaed payroll support
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Export up to 25 reports, including TPS
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <!-- Flex Container -->
+      <div class="container flex flex-col mx-auto mt-10 p-6 md:mt-28">
+        <!-- Features Title and Description -->
+        <div class="text-center mx-auto tracking-tighter">
+          <h3 class="text-2xl tracking-tight leading-5 font-medium md:text-3xl">
+            Everything you need to run your books
+          </h3>
+          <p
+            class="leading-5 tracking-tight mt-4 md:text-lg md:max-w-md md:mx-auto md:font-light"
+          >
+            Well everything you need if you aren't that picky about minor
+            details like tax compliance.
+          </p>
+        </div>
+        <!-- Features Boxes Container -->
+        <div
+          class="flex flex-col mt-16 gap-4 md:flex-row md:flex-wrap md:justify-center"
+        >
+          <!-- Box 1 -->
+          <div
+            class="text-center px-4 py-6 border-solid border-4 border-sky-100 rounded-lg shadow-md md:max-w-md"
+          >
+            <h4 class="font-bold">Payroll</h4>
+            <p class="leading-5 mt-2 text-sm">
+              Keep track of everyone's salaries and wheter or not they've been
+              paid. Direct deposit not supported.
+            </p>
+          </div>
+          <!-- Box 2 -->
+          <div
+            class="text-center px-4 py-6 border-solid border-4 border-sky-100 rounded-lg shadow-md md:max-w-md"
+          >
+            <h4 class="font-bold">Claim expenses</h4>
+            <p class="leading-5 mt-2 text-sm">
+              All of your receipts organized into one place, as long as you
+              don't mind typing in the data by hand.
+            </p>
+          </div>
+          <!-- Box 3 -->
+          <div
+            class="text-center px-4 py-6 border-solid border-4 border-sky-100 rounded-lg shadow-md md:max-w-md"
+          >
+            <h4 class="font-bold">VAT handling</h4>
+            <p class="leading-5 mt-2 text-sm">
+              We only sell our software to companies who don't deal with VAT at
+              all.
+            </p>
+          </div>
+          <!-- Box 4 -->
+          <div
+            class="text-center px-4 py-6 border-solid border-4 border-sky-100 rounded-lg shadow-md md:max-w-md"
+          >
+            <h4 class="font-bold">Reporting</h4>
+            <p class="leading-5 mt-2 text-sm">
+              Easily export your data into an Excel spreadsheet where you can do
+              whatever the hell you want with it.
+            </p>
+          </div>
+          <!-- Box 5 -->
+          <div
+            class="text-center px-4 py-6 border-solid border-4 border-sky-100 rounded-lg shadow-md md:max-w-md"
+          >
+            <h4 class="font-bold">Inventory</h4>
+            <p class="leading-5 mt-2 text-sm">
+              Never lose track of what's in stock with accurate inventory
+              tracking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <!-- Flex Container -->
+      <div class="container mx-auto text-center p-6 mt-10 md:mt-28">
+        <!-- Content -->
+        <div class="mx-auto">
+          <h3 class="text-2xl tracking-tight leading-5 font-medium md:text-3xl">
+            Reach out
+          </h3>
+          <p
+            class="leading-5 tracking-tight my-4 md:text-lg md:max-w-xl md:mx-auto md:font-light md:my-6"
+          >
+            Whether you're starting a project, have business inquiries or just
+            want to say hi, our inbox is always open so feel free to reach out
+            and we will get back to you as soon as possible.
+          </p>
+          <a
+            href="#"
+            class="transition-all bg-sky-400 hover:bg-sky-300 text-white font-bold py-2 px-4 border-b-4 border-sky-700 hover:border-sky-400 rounded shadow-lg"
+          >
+            Reach Out
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Flex Container -->
+      <div
+        class="container flex mx-auto mt-10 pb-3 md:mt-28 justify-center items-center"
+      >
+        <h4
+          class="font-light tracking-wide text-sm uppercase text-gray-600 md:text-base"
+        >
+          Yanii Websites. Copyright &copy; All Rights Reserved.
+        </h4>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
